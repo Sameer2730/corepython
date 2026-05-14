@@ -1,0 +1,1 @@
+77average=(day1+day2+day3) /7print("average temperature:",aver07000000000000
