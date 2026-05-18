@@ -1,0 +1,12 @@
+# is 
+x=10
+y=x
+print(x is y)
+# is not
+x=10
+y=20f
+print(x is y)
+# is not list
+a=[1,2,3]
+b=a
+print(a is b)
