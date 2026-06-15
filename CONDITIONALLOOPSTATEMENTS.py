@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 values = "12345"
 # print(list(values))
 # print(tuple(values))
@@ -14,3 +15,8 @@ print(v)
 # v[0] = list(v[0])
 # v(0) = tuple(v(0))
 # print(v)
+=======
+x=[1,2,3,5,4,6,7]
+x.sort()
+print(x)
+>>>>>>> 31262b1a61a71eaee2b2cf2719f1b7d1c4bdbdb0
