@@ -80,4 +80,31 @@ print('#########################################################################
 a={1,2,3,4}
 b={3,4,5,6}
 print(a.symmetric_difference(b))
-print('##############################################################################################3')
+print('##############################################################################################')
+
+
+
+
+# s={10,20,10,20,30,40}
+# result=s.split()
+
+# print(result)
+# name={"sameeer,reemas", [1,2]}
+# name.set(name)
+# print(name)
+# # name={"sameer","reemas"}
+# name=tuple(name)
+# print(name)
+name=[0,20,30,40,{20,30,40,50,}]
+user_input = int(input('give your value only below 100:'))
+print(user_input)
+name[4] = list(name[4])
+if user_input <= 100 and user_input>=1:
+    name[4][1] = user_input
+    name[3]=400
+    name[4] = set(name[4])
+    print(name)
+else:
+    print('only above 100 and zero also not accepts')
+
+#[0,20,30,40,{20,20,40,50,100,200}]
