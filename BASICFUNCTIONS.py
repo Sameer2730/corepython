@@ -375,3 +375,4 @@ def greet(name="sameer"):
 greet()
 greet("ali")
 ################################## default arguments and keyword arguments
+def reverse_ar
