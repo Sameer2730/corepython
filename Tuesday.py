@@ -6,8 +6,6 @@ while i<=10:
     print(i)
     i+=1
 # 3)print 10 to i using for 
-for i in range(10,0,-1):
-    print(i)
     # 3) using while 
 i=10
 while i>=1:
@@ -252,3 +250,445 @@ while i<=n:
     fact=fact*i
     i+=1
 print(fact)
+
+###########################################################################3333
+##########################################################################33
+########################################################################################33
+# section 2 if else:
+# 1)EVEN OR ODD
+n=100
+if n%2==0:
+    print("even")
+else:
+    print("odd")
+############################33
+# positive or negetive or Zero
+n=11
+if n>10:
+    print("positive")
+elif n<10:
+    print("negetive")
+else:
+    print("zero")
+################3)LARGEST OF 2 NUMBERS
+n=20
+n1=25
+if 20>25:
+    print("n1 is largest")
+else:
+    print("more n2 is largest")
+    ######################3
+# 4)largest of three numbers
+a=50
+b=60
+c=30
+if a>b and a>c:
+    print("largest")
+elif b>a and b>c:
+    print("second largest")
+else:
+    print("c is largest")
+#######################################3
+# smallest of three numbers
+a=30
+b=20
+c=1
+if a<b and a<c:
+    print("smallest")
+elif b<a and b<c:
+    print("second smallest")
+else:
+    print("third smallest")
+########################################3
+# 6)DIVISIBLE BY 3 AND 5
+n=15
+if n%3==0 and n%5==0:
+    print("dividsible by 3 and 5")
+else:
+    print("not divisible by 5 and 3")
+#############################
+#LEAP YEAR
+year=2024
+if year%400==0 or year%4==0 and year%100!=0:
+    print("leapyear")
+else:
+    print("not a leap year")
+########################3
+# GRADE CALCULATOR
+marks=78
+if marks>=90:
+    print("top performence")
+elif marks>=80:
+    print("good performence")
+elif marks>=70:
+    print("average good performence")
+elif marks>=60:
+    print("average marks")
+else:
+    print("fail")
+###########################33
+# VOTING +SENIOR CITIZEN
+age=65
+if age>=18:
+    if age>=60:
+        print("vote+senior citizen")
+    else:
+        print("vote allowed")
+else:
+    print("not elligible")
+#################################33
+num=456
+if num>10 and num<=100:
+    print("2 digit numbeer")
+elif  num>100 and num<500:
+    print("3 digit number")
+else:
+    print("single digit number")
+############## CHARACTER TYPE
+ch="a"
+if ch.isdigit():
+    print("digit")
+elif ch.isalpha():
+    print("alphabet")
+else:
+    print("isalnum")
+
+############3VOWEL OR CONSONENT
+character="e"
+if ch in "aeiou":
+    print("vowels")
+else:
+    print("consonents")
+##################333
+# TRIANGLE VALID
+a=3
+b=4
+c=5
+if a+b>c and b+c>a and c+a>b:
+    print("valid triangle")
+else:
+    print("ivalid triangle")
+###############
+pin=1234
+balance=5000
+if pin==1234:
+    if balance>=100:
+        print("withdrawal allowed")
+    else:
+        print("low balance")
+else:
+    print("wrong pin")
+################
+a=20
+b=10
+op="+"
+if op=="+":
+    print(a+b)
+elif op=="-":
+    print(a-b)
+else:
+    print("invalid operator")
+
+#############################
+num=1234
+rev=0
+while num>0:
+    digit=num%10
+    rev=rev*10+digit
+    num=num//10
+print(rev)
+###############PAINDROME NUMBER
+num=121
+temp=num
+rev=0
+while num>0:
+    digit=n%10
+    rev=rev*10+digit
+    num=num//10
+if temp==rev:
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+#################
+# PRIME NO 
+num=7
+count=0
+i=1
+while i<num:
+    if num%i==0:
+        count+=1
+    i+=1
+if count==2:
+    print("prime")
+else:
+    print("not a prime no")
+################# 1 to 100
+num=4
+while num<=100:
+    count=0
+    i+=1
+    while i<=num:
+        if num%i==0:
+            count+=1
+        i+=1
+    if count==2:
+        print(num)
+    num+=1
+
+arr=[10,20,30,40,50]
+i=len(arr)-1
+while i>=0:
+    print(arr[i])
+    i=i-1
+###############3333
+# freq
+arr=[1,1,1,2,2,4,4,4,3,3,3,3,3]
+freq={}
+for i in arr:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+###############3
+arr=[1,2,3,4,5,6,7,8]
+even=[]
+odd=[]
+for i in arr:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(even)
+print(odd)
+################3
+# common elements
+arr=[1,2,3,4]
+arr2=[3,4,5,6]
+common=[]
+for i in arr:
+    if i in arr2:
+        common.append(i)
+print(common)
+#################333
+n=5
+for i in range(n):
+    for j in range(n):
+        print('*',end="")
+    print()
+# $##################3
+n=5
+for i in range(1,n+1):
+    for j in range(i):
+        print('*',end=" ")
+    print()
+n=5
+for i in range(5,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+# ###########
+n=5
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+
+# ##########
+n=5
+for i in range(1,n+1):
+    for j in range(65,65+i):
+        print(chr(j),end=" ")
+    print()
+################################################################################
+###############################################################################################
+###########################################################################################################33333
+# sum of even numbers
+arr=[5,8,10,3,2]
+sum=0
+for i in arr:
+    if i%2==0:
+        sum+=i
+print(sum)
+##############3
+arr=[12,7,6,9,14]
+sum=0
+for i in arr:
+    if i%2==0:
+        sum+=i
+print(sum)
+###################333
+name="sameer"
+count=0
+for i in name:
+    if i in "aeiou":
+        count+=1
+        print(count)
+################
+text="education"
+count=0
+for i in text:
+    if i in "aeiou":
+        count+=1
+print(count)
+##################333
+arr=[2,3,2,4,3,2]
+freq={}
+for i in arr:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+#########3
+arr=[1,1,2,3,2,1]
+freq={}
+for i in arr:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+print(freq)
+##################
+arr=[5,20,8,30,25]
+largest=arr[0]
+for i in arr:
+    if i>largest:
+        largest=i
+print(largest)
+secondlargest=arr[0]
+for i in arr:
+    if i!=largest and i>secondlargest:
+        secondlargest=i
+print(secondlargest)
+#####
+num=537
+rev=int(str(num)[::-1])
+print(rev)
+###############3333
+num=537
+rev=""
+for i in str(num):
+    rev=i+rev
+print(rev)
+#####################33
+num=543
+rev=0
+while num>0:
+    digit=num%10
+    rev=rev*10+digit
+    num=num//10
+print(rev)
+###################################333
+# num=454
+# tenp=num
+# rev=0
+# while num>0:
+#     digit=num%10
+#     rev=rev*10+digit
+#     num=num//10
+# if temp==rev:
+#     print("palindrome")
+# else:
+#     print("not a palindrome")
+#################################3333
+########################################33
+num=121
+rev=int(str(num)[::-1])
+if num==rev:
+    print("palindrome")
+else:
+    print("not a palindrome")
+###########################################33
+num=121
+rev=""
+for i in str(num):
+    rev=i+rev
+if str(num)==rev:
+    print("palindrome")
+else:
+    print("not a palindrome")
+#############33
+num=153
+temp=num
+total=0
+while num>0:
+    digit=num%10
+    total=total+digit**3
+    num=num//10
+if total==temp:
+    print("armstrong number")
+else:
+    print("not a armstrong number")
+#############################################33
+num=153
+total=0
+for i in str(num):
+    total=total+int(i)**3
+if total==num:
+    print("armstrong number")
+else:
+    print("not a armstrong number")
+##################33
+num=13
+count=0
+for i in range(1,num+1):
+    if num%i==0:
+        count+=1
+if count==2:
+    print("prime")
+else:
+    print("not prime")
+##########3
+num=13
+i=1
+count=0
+while i<=num:
+    if num%i==0:
+        count+=1
+    i+=1
+if count==2:
+    print("prime")
+else:
+    print("not a prime")
+##############################33
+num=15
+i=1
+count=0
+while i<num:
+    if num%i==0:
+        count+=1
+    i+=1
+if count==2:
+    print("prime")
+else:
+    print("not a prime")
+#################33
+num=5
+fact=1
+for i in range(1,num+1):
+    fact=fact*i
+print(fact)
+##############3
+num=5
+fact=1
+i=1
+while i<=num:
+    fact=fact*i
+    i+=1
+print(fact)
+####################333333
+num=2345
+sum=0
+for i in str(num):
+    sum+=int(i)
+print(sum)
+####################3
+num=5
+i=1
+sum=0
+while i<=num:
+    sum+=i
+    i+=1
+print(sum)
